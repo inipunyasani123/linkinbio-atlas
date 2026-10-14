@@ -4,10 +4,10 @@ import "./globals.css";
 const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", weight: ["500", "600", "700", "800"] });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"Atlas Studio","description":"Konsultan brand & desain","url":"https://linkinbio-atlas.vercel.app"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"Atlas Studio","description":"Konsultan brand & desain","url":"https://linkinbio-atlas.pintuweb.id"};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-atlas.vercel.app"),
+  metadataBase: new URL("https://linkinbio-atlas.pintuweb.id"),
   title: { default: "Atlas Studio — Konsultan Brand & Desain, Bandung", template: "%s — Atlas Studio" },
   description: "Tautan Atlas Studio, konsultan brand dan desain di Bandung: indeks lima karya, catatan studio, layanan dengan harga tetap, dan jadwal pertemuan 30 menit.",
   applicationName: "Atlas Studio",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Atlas Studio" }],
   creator: "Atlas Studio",
   publisher: "Atlas Studio",
-  alternates: { canonical: "https://linkinbio-atlas.vercel.app" },
+  alternates: { canonical: "https://linkinbio-atlas.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-atlas.vercel.app",
+    url: "https://linkinbio-atlas.pintuweb.id",
     siteName: "Atlas Studio",
     title: "Atlas Studio — Konsultan Brand & Desain, Bandung",
     description: "Tautan Atlas Studio, konsultan brand dan desain di Bandung: indeks lima karya, catatan studio, layanan dengan harga tetap, dan jadwal pertemuan 30 menit.",

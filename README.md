@@ -2,7 +2,7 @@
 
 Tautan Atlas Studio, konsultan brand dan desain di Bandung: indeks lima karya, catatan studio, layanan dengan harga tetap, dan jadwal pertemuan 30 menit.
 
-**Demo live:** https://linkinbio-atlas.vercel.app
+**Demo live:** https://linkinbio-atlas.pintuweb.id
 
 ![Tangkapan layar Atlas Studio](public/og.jpg)
 
