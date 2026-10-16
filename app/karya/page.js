@@ -16,30 +16,29 @@ export default function Karya() {
         <h1 className="rise text-5xl font-extrabold uppercase leading-[0.95] md:text-7xl">Karya<br />terpilih<span className="text-accent">.</span></h1>
         <p className="rise mt-5 max-w-md text-sm leading-relaxed text-ink/75" style={{ animationDelay: '0.08s' }}>Lima proyek yang paling banyak mengajari kami. Satu kalimat masalah, satu angka hasil.</p>
 
-        <div className="mt-12 overflow-x-auto" tabIndex={0} role="region" aria-label="Indeks karya">
-          <table className="w-full min-w-[46rem] border-collapse text-left">
-            <caption className="sr-only">Daftar lima proyek Atlas Studio</caption>
-            <thead>
-              <tr className="border-b-2 border-ink font-mono text-[11px] uppercase tracking-[0.18em] text-ink/65">
-                {['No', 'Tahun', 'Klien', 'Lingkup', 'Hasil'].map((h) => <th key={h} scope="col" className="py-3 pr-4 font-normal">{h}</th>)}
+        {/* Tabel indeks di layar lebar; di ponsel tiap baris ditumpuk supaya tidak perlu digulir ke samping. */}
+        <table className="mt-12 w-full border-collapse text-left">
+          <caption className="sr-only">Daftar lima proyek Atlas Studio</caption>
+          <thead className="max-lg:sr-only">
+            <tr className="border-b-2 border-ink font-mono text-[11px] uppercase tracking-[0.18em] text-ink/65">
+              {['No', 'Tahun', 'Klien', 'Lingkup', 'Hasil'].map((h) => <th key={h} scope="col" className="py-3 pr-4 font-normal">{h}</th>)}
+            </tr>
+          </thead>
+          <tbody className="max-lg:border-t-2 max-lg:border-ink">
+            {KARYA.map((k) => (
+              <tr key={k.no} className="hairline group border-b align-top transition-colors hover:bg-ink hover:text-paper max-lg:grid max-lg:grid-cols-[2.25rem_minmax(0,1fr)] max-lg:gap-x-3 max-lg:py-5">
+                <td className="py-5 pr-4 font-mono text-xs text-ink/60 group-hover:text-accent max-lg:row-span-4 max-lg:py-0 max-lg:pt-1.5">{k.no}</td>
+                <td className="py-5 pr-4 font-mono text-sm max-lg:py-0 max-lg:text-xs max-lg:text-ink/65 max-lg:group-hover:text-paper/75">{k.tahun}</td>
+                <th scope="row" className="py-5 pr-4 text-left max-lg:py-0">
+                  <span className="block font-display text-2xl font-bold uppercase tracking-tight">{k.nama}</span>
+                  <span className="mt-1 block text-xs font-normal text-ink/65 group-hover:text-paper/75">{k.sektor} — {k.ringkas}</span>
+                </th>
+                <td className="py-5 pr-4 text-sm max-lg:pt-3 max-lg:pb-0"><span className="mr-2 font-mono text-[11px] uppercase tracking-[0.15em] text-ink/65 group-hover:text-paper/75 lg:hidden" aria-hidden="true">Lingkup</span>{k.lingkup}</td>
+                <td className="py-5 text-sm max-lg:pt-1 max-lg:pb-0"><span className="mr-2 font-mono text-[11px] uppercase tracking-[0.15em] text-ink/65 group-hover:text-paper/75 lg:hidden" aria-hidden="true">Hasil</span>{k.hasil}</td>
               </tr>
-            </thead>
-            <tbody>
-              {KARYA.map((k) => (
-                <tr key={k.no} className="hairline group border-b align-top transition-colors hover:bg-ink hover:text-paper">
-                  <td className="py-5 pr-4 font-mono text-xs text-ink/60 group-hover:text-accent">{k.no}</td>
-                  <td className="py-5 pr-4 font-mono text-sm">{k.tahun}</td>
-                  <th scope="row" className="py-5 pr-4 text-left">
-                    <span className="block font-display text-2xl font-bold uppercase tracking-tight">{k.nama}</span>
-                    <span className="mt-1 block text-xs font-normal text-ink/65 group-hover:text-paper/75">{k.sektor} — {k.ringkas}</span>
-                  </th>
-                  <td className="py-5 pr-4 text-sm">{k.lingkup}</td>
-                  <td className="py-5 text-sm">{k.hasil}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
 
         <section id="catatan" aria-labelledby="catatan-h" className="mt-20 scroll-mt-8 grid gap-10 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           <h2 id="catatan-h" className="text-3xl font-extrabold uppercase leading-none md:text-4xl">Catatan<br />studio<span className="text-accent">.</span></h2>
@@ -56,7 +55,7 @@ export default function Karya() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 bg-ink p-8 text-paper md:flex-row md:items-center">
           <p className="font-display text-2xl font-bold uppercase">Punya brief satu halaman?</p>
-          <Link href="/layanan#jadwal" className="border border-paper px-5 py-3 text-sm font-semibold uppercase tracking-wide hover:bg-accent hover:border-accent">Jadwalkan pertemuan →</Link>
+          <Link href="/layanan#jadwal" className="inline-flex min-h-11 items-center border border-paper px-5 py-3 text-sm font-semibold uppercase tracking-wide hover:border-accent hover:bg-accent hover:text-ink">Jadwalkan pertemuan →</Link>
         </div>
         <p className="mt-8 text-xs text-ink/65">Klien dan hasil adalah contoh purwarupa desain.</p>
       </main>

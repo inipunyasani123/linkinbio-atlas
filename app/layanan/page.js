@@ -1,4 +1,5 @@
 import { PAKET, PROSES, SITE, rp } from '@/lib/atlas';
+import { hariIniWIB } from '@/lib/waktu';
 import Kembali from '../components/Kembali';
 import Jadwal from '../components/Jadwal';
 
@@ -42,7 +43,7 @@ export default function Layanan() {
           </ol>
         </section>
 
-        <Jadwal />
+        <Jadwal hari={hariIniWIB()} />
         <p className="mt-8 text-xs text-ink/65">Harga dan slot adalah contoh purwarupa desain.</p>
       </main>
     </>
