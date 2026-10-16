@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Gambar from '../components/Gambar';
 import { CATATAN, KARYA, SITE } from '@/lib/atlas';
 import Kembali from '../components/Kembali';
 
@@ -21,13 +22,16 @@ export default function Karya() {
           <caption className="sr-only">Daftar lima proyek Atlas Studio</caption>
           <thead className="max-lg:sr-only">
             <tr className="border-b-2 border-ink font-mono text-[11px] uppercase tracking-[0.18em] text-ink/65">
-              {['No', 'Tahun', 'Klien', 'Lingkup', 'Hasil'].map((h) => <th key={h} scope="col" className="py-3 pr-4 font-normal">{h}</th>)}
+              {['No', 'Visual', 'Tahun', 'Klien', 'Lingkup', 'Hasil'].map((h) => <th key={h} scope="col" className="py-3 pr-4 font-normal">{h}</th>)}
             </tr>
           </thead>
           <tbody className="max-lg:border-t-2 max-lg:border-ink">
             {KARYA.map((k) => (
               <tr key={k.no} className="hairline group border-b align-top transition-colors hover:bg-ink hover:text-paper max-lg:grid max-lg:grid-cols-[2.25rem_minmax(0,1fr)] max-lg:gap-x-3 max-lg:py-5">
-                <td className="py-5 pr-4 font-mono text-xs text-ink/60 group-hover:text-accent max-lg:row-span-4 max-lg:py-0 max-lg:pt-1.5">{k.no}</td>
+                <td className="py-5 pr-4 font-mono text-xs text-ink/60 group-hover:text-accent max-lg:row-span-5 max-lg:py-0 max-lg:pt-1.5">{k.no}</td>
+                <td className="w-56 py-5 pr-6 max-lg:w-auto max-lg:pt-0 max-lg:pb-4">
+                  <Gambar src={k.gambar} alt={k.alt} width={1200} height={900} asli={1200} sizes="(min-width: 1024px) 200px, calc(100vw - 7.25rem)" className="aspect-[4/3] w-full bg-ink/5 object-cover max-lg:aspect-[16/10]" />
+                </td>
                 <td className="py-5 pr-4 font-mono text-sm max-lg:py-0 max-lg:text-xs max-lg:text-ink/65 max-lg:group-hover:text-paper/75">{k.tahun}</td>
                 <th scope="row" className="py-5 pr-4 text-left max-lg:py-0">
                   <span className="block font-display text-2xl font-bold uppercase tracking-tight">{k.nama}</span>
