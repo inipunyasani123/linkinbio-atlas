@@ -6,7 +6,7 @@ Foto di folder `karya/` adalah foto objek bebas hak cipta (CC0 / domain publik) 
 | --- | --- | --- | --- | --- | --- |
 | karya/gelas-kertas.webp | Gelas kopi kertas merah bertutup hitam | Artem Beliaikin | CC0 | https://live.staticflickr.com/65535/50327891762_95e7374aa1_b.jpg | pendekatan (gelas tanpa merek) |
 | karya/kain-tenun.webp | Kain tenun kotak biru-putih | Art Institute of Chicago | CC0 | https://www.rawpixel.com (Intricate woven textile pattern, aic156660) | pendekatan (bukan tenun Garut) |
-| karya/papan-penunjuk.webp | Papan penunjuk arah gantung berpanah | rawpixel | CC0 | https://www.rawpixel.com (Direction sign hospital) | pendekatan (papan rumah sakit, bukan klinik gigi) |
+| karya/kursi-dental.webp | Kursi dental krem di ruang perawatan kosong (dipangkas tanpa tulisan) | Joseph Scozzari | Domain publik | https://commons.wikimedia.org/wiki/File:Captives_dental_studio_-b.JPG | pendekatan (kursi dental sungguhan, bukan Klinik Gigi Pagi) |
 | karya/tumpukan-buku.webp | Tumpukan buku warna-warni | Alexander Grey | CC0 | https://commons.wikimedia.org/wiki/File:Stack_of_multicolored_books_on_a_table.jpg | pendekatan |
 | karya/gulungan-film.webp | Gulungan film 16 mm | DiscoA340 | CC0 | https://commons.wikimedia.org/wiki/File:16_mm_Film_Reel_(With_Film).jpg | pendekatan |
 
